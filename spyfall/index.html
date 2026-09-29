@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="mn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1533"><link rel="manifest" href="manifest.json">
+<title>Тагнуулын ширээ</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="app">
+<!-- Тоглоом сонгох -->
+<section id="s-home" class="screen active">
+ <header><button class="pill" data-go="home">← Гарах</button><div class="code"><small>Өрөөний код</small><b class="rc">254852</b></div><button class="pill gold" data-go="profile">Хүлээлгийн өрөө</button></header>
+ <h2 class="ttl">Тоглоом сонгоно уу</h2>
+ <div class="cards">
+  <div class="gcard"><h3>BOARD GAME</h3><div class="art">🎲</div><button class="play" disabled>PLAY NOW</button><p>Up to 6 Players<br>Monopoly Classic Rules</p></div>
+  <div class="gcard" data-go="table"><h3>VOICE GAME</h3><div class="art">🕵️</div><button class="play" data-go="table">PLAY NOW</button><p>6/8 Players Connected<br>Voice Chat Social Deduction</p></div>
+ </div>
+ <nav class="bar"><button data-go="home">👥<small>Friends</small></button><span>Найзуудаа урьж тоглоорой</span><button data-go="profile">⚙️<small>Settings</small></button></nav>
+</section>
+<!-- Ширээ -->
+<section id="s-table" class="screen">
+ <header><button class="pill" data-go="home">← Гарах</button><div class="code"><small>Өрөөний код</small><b class="rc">254852</b></div><button class="pill gold" data-go="profile">Профайл</button></header>
+ <div class="panel">
+  <div class="phead"><div><h2>Тагнуулын ширээ</h2><small id="count"></small></div><span class="live">● LIVE</span></div>
+  <div class="table" id="table"><div class="ring"><div class="logo"><b>Ш</b><small>SPYFALL</small></div></div></div>
+  <div class="controls"><button id="mic" class="mic off">🎙️ Микрофон асаах</button></div>
+  <div class="chat"><div id="log"></div><form id="cf"><input id="ci" maxlength="120" placeholder="Мессеж бичих..." autocomplete="off"><button>➤</button></form></div>
+  <p class="hint">Микрофоноо асаагаад ширээн дээр ярилцаарай</p>
+ </div>
+</section>
+<!-- Профайл -->
+<section id="s-profile" class="screen">
+ <header><button class="pill" data-go="table">← Гарах</button><div class="code"><small>Өрөөний код</small><b class="rc">254852</b></div><span></span></header>
+ <div class="panel prof">
+  <div class="pcard"><h2 class="gold-t">Профайл</h2>
+   <label class="ava big"><img id="pava" alt=""><input type="file" id="file" accept="image/*" hidden><span class="edit">📷 Зураг солих</span></label>
+   <input id="pname" class="name" maxlength="14">
+   <div class="lvl"><i style="width:55%"></i><em>Level 38</em></div>
+   <div class="stats"><div>Total Games:<b>450</b></div><div>Win Rate:<b>68%</b></div><div>Spy Roles:<b>98</b></div><div>Location Master:<b>12</b></div></div>
+  </div>
+  <div class="tiles"><div class="tile"><b>Settings & Customization</b>⚙️ 🔊 ✏️</div><div class="tile"><b>Inventory</b>🎩 🎓 🎀</div><div class="tile"><b>Game History</b>📊 Match summary</div><div class="tile"><b>Achievements</b>🏅</div><div class="tile"><b>Notifications</b>🔔</div></div>
+ </div>
+</section>
+</div><script src="app.js"></script></body></html>
